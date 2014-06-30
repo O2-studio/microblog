@@ -11,6 +11,7 @@
         form = document.forms['login'];
         form.elements['openid'].value = openid
     }
+
 </script>
 <h1>Sign In</h1>
 <form action="" mentod="post" name="login">
@@ -25,7 +26,9 @@
         <a href="javascript:set_openid('{{pr.url}}', '{{pr.name}}');">{{pr.name}}</a> |
         {% endfor %}
     </p>
+
     <p>{{form.remember_me}} Remember Me</p>
+
     <p><input type="submit" value="Sign In"></p>
 </form>
 {% endblock %}
